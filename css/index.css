@@ -629,7 +629,7 @@ body {width: 100%; height: 100%; overflow-x: hidden; font-family: sans-serif; -w
     .footer .contents .footer-list {flex-flow: column;}
     .footer .contents .footer-list .list {width: 100%; margin-bottom: 45px;}
     .footer .contents .footer-list .list ul li {margin-bottom: 12px;}
-    .footer .contents .footer-address {margin-top: 0px;}
+    .footer .contents .footer-address {margin-top: 0px; width: 93%;}
     .footer .contents .footer-menu ul {flex-flow: column;}
     .footer .contents .footer-menu ul li {width: 100%; margin-bottom: 8px;}
     .footer .contents .footer-menu ul li a > br {display: none; height: 0;}
