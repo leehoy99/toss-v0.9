@@ -537,7 +537,7 @@ body {width: 100%; height: 100%; overflow-x: hidden; font-family: sans-serif; -w
     .section5 .contents .paragraph-box .main-paragraph > br {display: none; height: 0;}
     .section5 .contents .paragraph-box .main-paragraph .paragraph-title {font-size: 18px;}
     .section5 .contents .paragraph-box .main-paragraph .paragraph-text {font-size: 26px;}
-    .section5 .contents .img-box {position: absolute; top: -600px; width: 600px; left: -60px; scale: 0.6; bottom: 0px;}
+    .section5 .contents .img-box {position: absolute; top: -600px; width: 600px; left: -33%; transform: translateX(-30%); scale: 0.6; bottom: 0px;}
     .section5 .contents .paragraph-box .paragraph-text-box {margin-top: 600px;}
     .section5 .contents .paragraph-box .paragraph-text-box h2 {font-size: 26px;}
     .section5 .contents .paragraph-box .paragraph-text-box .sub-paragraph {font-size: 16px; font-weight: bold; line-height: 1.6rem;}
@@ -624,7 +624,7 @@ body {width: 100%; height: 100%; overflow-x: hidden; font-family: sans-serif; -w
     
     /* footer */
 
-    .footer{width: 100%;}
+    .footer{width: 100%; overflow-x: hidden;}
     .footer .contents {padding: 70px 0 80px 40px;}
     .footer .contents .footer-list {flex-flow: column;}
     .footer .contents .footer-list .list {width: 100%; margin-bottom: 45px;}
