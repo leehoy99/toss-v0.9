@@ -262,7 +262,7 @@ body {width: 100%; font-family: sans-serif; -webkit-font-smoothing: antialiased;
 
 /* section7 */
 
-.section7 {width: 100%; background-color: var(--main-color);}
+.section7 {width: 100%; background-color: var(--main-color); overflow: hidden;}
 .section7 .contents {width: 92%; height: fit-content; max-width: 1050px;  margin: 0 auto; padding: 200px 0; position: relative;}
 .section7 .contents .paragraph-box {width: 50%;}
 .section7 .contents .paragraph-box .main-paragraph .paragraph-title {font-size: 25px; color: var(--third-color); }
