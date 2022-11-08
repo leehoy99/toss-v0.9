@@ -170,35 +170,71 @@ $(function() {
         
         if (sct >= sectionOffset('.section7') - 700) {
             $('.section7 .contents .main-paragraph').addClass('ani');
-            $('.section7 .contents .img-box .img-text-center .img-text-L').addClass('ani');
-            $('.section7 .contents .img-box .img-text-center .img-text-R').addClass('ani');
-            $('.section7 .contents .img-box .img-text-center .img-text-response').addClass('ani');
-            $('.section7 .contents .img-box .img-text-bottom').addClass('ani');
+            $('.section7 .contents .img-text-center .img-text-L').addClass('ani');
+            $('.section7 .contents .img-text-center .img-text-R').addClass('ani');
+            $('.section7 .contents .img-text-center .img-text-response').addClass('ani');
+            $('.section7 .contents .img-text-bottom').addClass('ani');
         }
 
         // section7 - chart
         const chartOpacity = () => {
             $('.section7 .contents .img-box .inner-img .chart .chart-box').css({'opacity': 0})
-            $('.section7 .contents .img-box .inner-img .chart .chart-box').eq(3).css({'opacity': 1 })
-            
-        if (sct >= sectionOffset('.section7') + 0 ){
-            $('.section7 .contents .img-box .inner-img .chart .chart-box').eq(2).css({'opacity': 1 }
-            );
-            $('.section7 .contents .img-box .inner-img .chart .chart-box').eq(4).css({'opacity': 1 }
-            );
-        }
-        if (sct >= sectionOffset('.section7') + 100 ){
-            $('.section7 .contents .img-box .inner-img .chart .chart-box').eq(1).css({'opacity': 1 }
-            );
-            $('.section7 .contents .img-box .inner-img .chart .chart-box').eq(5).css({'opacity': 1 }
-            );
-        }
-        if (sct >= sectionOffset('.section7') + 200 ){
-            $('.section7 .contents .img-box .inner-img .chart .chart-box').eq(0).css({'opacity': 1 }
-            );
-            $('.section7 .contents .img-box .inner-img .chart .chart-box').eq(6).css({'opacity': 1 }
-            );
-        }
+            if($(window).width() > 680 && sct < sectionOffset('.section9')){
+                if (sct >= sectionOffset('.section7') -400 ){
+                calc = (sct-8002)/1000*2.0;
+                $('.section7 .contents .img-box .inner-img .chart .chart-box').eq(3).css({'opacity': calc })
+            }
+                if (sct >= sectionOffset('.section7') -200 ){
+                calc = (sct-8202)/1000*2.0;
+                $('.section7 .contents .img-box .inner-img .chart .chart-box').eq(2).css({'opacity': calc }
+                );
+                $('.section7 .contents .img-box .inner-img .chart .chart-box').eq(4).css({'opacity': calc }
+                );
+            }
+            if (sct >= sectionOffset('.section7') + 0 ){
+                calc = (sct-8402)/1000*2.0;
+                $('.section7 .contents .img-box .inner-img .chart .chart-box').eq(1).css({'opacity': calc }
+                );
+                $('.section7 .contents .img-box .inner-img .chart .chart-box').eq(5).css({'opacity': calc }
+                );
+            }
+            if (sct >= sectionOffset('.section7') + 200 ){
+                calc = (sct-8602)/1000*2.0;
+                $('.section7 .contents .img-box .inner-img .chart .chart-box').eq(0).css({'opacity': calc }
+                );
+                $('.section7 .contents .img-box .inner-img .chart .chart-box').eq(6).css({'opacity': calc }
+                );
+            }
+            }
+            else if($(window).width() <= 680 && sct < sectionOffset('.section9')){
+                if (sct >= sectionOffset('.section7') - 300 ){
+                    console.log(sectionOffset('.section7'))
+                calc = (sct-sectionOffset('.section7') + 300)/1000*2.0;
+                $('.section7 .contents .img-box .inner-img .chart .chart-box').eq(3).css({'opacity': calc })
+            }
+                if (sct >= sectionOffset('.section7') -200 ){
+                    console.log(sectionOffset('.section7'))
+                calc = (sct-sectionOffset('.section7') + 200)/1000*2.0;
+                $('.section7 .contents .img-box .inner-img .chart .chart-box').eq(2).css({'opacity': calc }
+                );
+                $('.section7 .contents .img-box .inner-img .chart .chart-box').eq(4).css({'opacity': calc }
+                );
+            }
+            if (sct >= sectionOffset('.section7') + 0 ){
+                calc = (sct-sectionOffset('.section7'))/1000*2.0;
+                $('.section7 .contents .img-box .inner-img .chart .chart-box').eq(1).css({'opacity': calc }
+                );
+                $('.section7 .contents .img-box .inner-img .chart .chart-box').eq(5).css({'opacity': calc }
+                );
+            }
+            if (sct >= sectionOffset('.section7') + 200 ){
+                calc = (sct-sectionOffset('.section7') - 200)/1000*2.0;
+                $('.section7 .contents .img-box .inner-img .chart .chart-box').eq(0).css({'opacity': calc }
+                );
+                $('.section7 .contents .img-box .inner-img .chart .chart-box').eq(6).css({'opacity': calc }
+                );
+            }
+            }
         }
         chartOpacity();
 
